@@ -95,16 +95,16 @@
 <!-- MECHANICS / EXAMPLE -->
 <section id="mechanics" class="border-b border-slate-800/60">
   <div class="max-w-6xl mx-auto px-6 py-24">
-    <h2 class="text-3xl font-bold mb-4">Механіка карбу та доповнень</h2>
-    <p class="text-slate-400 mb-12 max-w-2xl">Як приклад — «<span class="text-yellow-400">тремпель</span>», харків'янське слово для вішака.</p>
+    <h2 class="text-3xl font-bold mb-4">Механіка кластера та доповнень</h2>
+    <p class="text-slate-400 mb-12 max-w-2xl">Приклад: кластер <span class="text-yellow-400">«сковорода»</span> з регіональною формою <span class="text-yellow-400">«пательня»</span> (Галичина).</p>
 
     <div class="space-y-4">
       <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
         <div class="flex items-start gap-4">
           <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">01</div>
           <div>
-            <h4 class="font-semibold mb-1">Карб слова</h4>
-            <p class="text-slate-400 text-sm">Перший автор сплачує <span class="text-yellow-400 font-mono">10 $SURZH</span>, on-chain записується: слово «тремпель», значення «вішак для одягу», регіон «Слобожанщина», автор @Tambus. Слово стає NFT — оригінатор #0.</p>
+            <h4 class="font-semibold mb-1">Карб слова-вузла</h4>
+            <p class="text-slate-400 text-sm">Творець кластера сплачує токени і карбує центральне значення: «посуд для смаження на пласкому дні» + літературна форма «сковорода». Стає <span class="text-yellow-400">куратором кластера</span>. Для слів без літ. еквіваленту (як «ЛЕП») центром стає сама регіональна форма.</p>
           </div>
         </div>
       </div>
@@ -113,8 +113,8 @@
         <div class="flex items-start gap-4">
           <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">02</div>
           <div>
-            <h4 class="font-semibold mb-1">Спроба переоткрити (query)</h4>
-            <p class="text-slate-400 text-sm">Інший користувач намагається додати «тремпель» → платить <span class="text-yellow-400 font-mono">1 $SURZH</span> → виявляє що слово існує. Розподіл: <span class="text-yellow-400">50%</span> оригінатору, <span class="text-yellow-400">40%</span> DAO, <span class="text-yellow-400">10%</span> спалюється. Це дефляція + пасивний дохід.</p>
+            <h4 class="font-semibold mb-1">Перегляд — безкоштовно</h4>
+            <p class="text-slate-400 text-sm">Словник вільно доступний. Кожен перегляд інкрементує <span class="text-yellow-400 font-mono">view_counter</span> кластера. Лічильник зважений по літопису того, хто переглядає: анонім — менший вклад, користувач з високим літописом — більший. Це і є реальний рейтинг популярності, а не штучні лайки.</p>
           </div>
         </div>
       </div>
@@ -123,8 +123,8 @@
         <div class="flex items-start gap-4">
           <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">03</div>
           <div>
-            <h4 class="font-semibold mb-1">Доповнення значення</h4>
-            <p class="text-slate-400 text-sm">Контрибутор стейкає <span class="text-yellow-400 font-mono">5 $SURZH</span> на пропозицію: «додати етимологію — нім. Trempel». Чекає схвалення спільноти або Підтверджувача. Apprve → стає контрибутором #1, отримує <span class="text-yellow-400">20%</span> з усіх наступних query.</p>
+            <h4 class="font-semibold mb-1">Додавання регіональної форми</h4>
+            <p class="text-slate-400 text-sm">Контрибутор стейкає <span class="text-yellow-400 font-mono">5 $SURZH</span> на пропозицію: додати «пательня» (Галичина) до кластера «сковорода». Чекає схвалення — спільноти або Підтверджувача. Apprve → стає контрибутором #1, його форма потрапляє у мапу регіонів кластера.</p>
           </div>
         </div>
       </div>
@@ -133,8 +133,8 @@
         <div class="flex items-start gap-4">
           <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">04</div>
           <div>
-            <h4 class="font-semibold mb-1">Стек роялті</h4>
-            <p class="text-slate-400 text-sm">Геометрично-спадний розподіл: оригінатор <span class="text-yellow-400">50%</span>, контрибутор #1 — <span class="text-yellow-400">20%</span>, #2 — <span class="text-yellow-400">10%</span>, #3 — <span class="text-yellow-400">5%</span>, #4 — <span class="text-yellow-400">2.5%</span> і т.д. Решта йде в DAO + burn.</p>
+            <h4 class="font-semibold mb-1">Геометричний стек роялті на доповненнях</h4>
+            <p class="text-slate-400 text-sm">Коли наступний контрибутор додає ще одну форму («сковородка», Слобожанщина) — частина його комісії розподіляється вгору по стеку: куратор-#0 <span class="text-yellow-400">50%</span>, контрибутор-#1 <span class="text-yellow-400">20%</span>, #2 <span class="text-yellow-400">10%</span>, #3 <span class="text-yellow-400">5%</span> і т.д. Решта — DAO та burn.</p>
           </div>
         </div>
       </div>
@@ -143,8 +143,8 @@
         <div class="flex items-start gap-4">
           <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">05</div>
           <div>
-            <h4 class="font-semibold mb-1">Спір та slashing</h4>
-            <p class="text-slate-400 text-sm">Якщо доповнення доведено помилковим у форум-треді → refund попереднім контрибуторам, заморозка комісій, мінус літопис автору пропозиції. Самоочисний протокол.</p>
+            <h4 class="font-semibold mb-1">Race condition та slashing</h4>
+            <p class="text-slate-400 text-sm">Два творці одночасно карбують одне значення — перемагає перший on-chain commit. Дублюючі кластери виявляються AI-кластеризацією і пропонуються до злиття. Якщо доповнення доведено фейком у форум-треді — refund попереднім контрибуторам, заморозка комісій, мінус літопис автору пропозиції. Самоочисний протокол.</p>
           </div>
         </div>
       </div>
@@ -155,11 +155,11 @@
 <!-- DICTIONARY -->
 <section id="dictionary" class="border-b border-slate-800/60">
   <div class="max-w-6xl mx-auto px-6 py-24">
-    <h2 class="text-3xl font-bold mb-4">Стартовий словник</h2>
-    <p class="text-slate-400 mb-8 max-w-2xl">20 суржикових слів з регіональною прив'язкою — кандидати на перший карб у протоколі. Натисни регіон, щоб відфільтрувати.</p>
+    <h2 class="text-3xl font-bold mb-4">Стартові кластери</h2>
+    <p class="text-slate-400 mb-8 max-w-2xl">19 кластерів значень з регіональними формами. Центр кластера — літературна укр. форма (або сама регіональна форма, якщо нормативного еквіваленту немає, як «ЛЕП»). Лічильники переглядів — демонстраційні.</p>
 
     <div id="region-filters" class="flex flex-wrap gap-2 mb-8"></div>
-    <div id="word-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    <div id="cluster-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
   </div>
 </section>
 
@@ -274,30 +274,69 @@
 </footer>
 
 <script>
-  const WORDS = [
-    {word:"тремпель",meaning:"вішак для одягу",region:"Слобожанщина",example:"Повісь сорочку на тремпель."},
-    {word:"паста",meaning:"ампула / стержень для кулькової ручки",region:"Слобожанщина",example:"Паста закінчилась посередині уроку."},
-    {word:"ЛЕП",meaning:"бруд на шкірі, що скочується у кульки",region:"Слобожанщина",example:"На шиї перший ЛЕП — тиждень не митий."},
-    {word:"балакати",meaning:"говорити, розмовляти",region:"Центр-Схід",example:"Шо ти балакаєш такого?"},
-    {word:"файно",meaning:"добре, гарно",region:"Галичина",example:"Файно ся стало!"},
-    {word:"гонорово",meaning:"пихато, з гордістю",region:"Галичина",example:"Йде гонорово, як пан."},
-    {word:"пательня",meaning:"сковорода",region:"Галичина",example:"На пательні млинці смажу."},
-    {word:"мешкати",meaning:"жити, постійно проживати",region:"Галичина",example:"Мешкаю у Львові з 2020 року."},
-    {word:"ровер",meaning:"велосипед",region:"Галичина",example:"Сів на ровер і поїхав до Стрия."},
-    {word:"сегодня",meaning:"сьогодні",region:"Усюди (русизм)",example:"Сегодня на роботу не йду."},
-    {word:"больниця",meaning:"лікарня",region:"Усюди (русизм)",example:"Поклали в больницю на тиждень."},
-    {word:"слідуючий",meaning:"наступний",region:"Усюди (русизм)",example:"Слідуючий хто заходить?"},
-    {word:"здача",meaning:"решта (при оплаті готівкою)",region:"Усюди",example:"Здачі не треба, лиши собі."},
-    {word:"базар",meaning:"ринок, торговище",region:"Усюди",example:"Пішла на базар по м'ясо."},
-    {word:"картоха",meaning:"картопля (ласкаво-побутово)",region:"Полтавщина",example:"Накопали два мішки картохи."},
-    {word:"пацан",meaning:"хлопець, малий",region:"Південь-Схід",example:"Малий пацан вибіг на дорогу."},
-    {word:"пацанчик",meaning:"юнак, малий хлопець (ласкаво)",region:"Південь (Одеса)",example:"Привіт, пацанчик, ти чий?"},
-    {word:"оце-во",meaning:"ось це, дивись на це",region:"Поділля",example:"Оце-во подивися, шо я знайшов!"},
-    {word:"тутечки",meaning:"тут, у цьому місці",region:"Поділля",example:"Тутечки був, а вже нема."},
-    {word:"куфайка",meaning:"стара ватна куртка, тілогрейка",region:"Слобожанщина",example:"Накинь куфайку, надворі холодно."}
+  const CLUSTERS = [
+    {literary:"сковорода",meaning:"посуд для смаження на пласкому дні",views:12430,rank:47,forms:[
+      {form:"пательня",region:"Галичина",example:"На пательні млинці смажу."}
+    ]},
+    {literary:"вішак",meaning:"пристосування для розвішування одягу",views:8910,rank:92,forms:[
+      {form:"тремпель",region:"Слобожанщина",example:"Повісь сорочку на тремпель."}
+    ]},
+    {literary:"жити",meaning:"постійно проживати десь",views:6230,rank:128,forms:[
+      {form:"мешкати",region:"Галичина",example:"Мешкаю у Львові з 2020 року."}
+    ]},
+    {literary:"велосипед",meaning:"двоколісний транспорт з педалями",views:5410,rank:145,forms:[
+      {form:"ровер",region:"Галичина",example:"Сів на ровер і поїхав до Стрия."}
+    ]},
+    {literary:"говорити",meaning:"вести розмову",views:21560,rank:18,forms:[
+      {form:"балакати",region:"Центр-Схід",example:"Шо ти балакаєш такого?"}
+    ]},
+    {literary:"добре",meaning:"як підтвердження якості",views:18230,rank:23,forms:[
+      {form:"файно",region:"Галичина",example:"Файно ся стало!"}
+    ]},
+    {literary:"картопля",meaning:"коренеплід Solanum tuberosum",views:4150,rank:187,forms:[
+      {form:"картоха",region:"Полтавщина",example:"Накопали два мішки картохи."}
+    ]},
+    {literary:"хлопець",meaning:"молодий чоловік, юнак",views:9920,rank:78,forms:[
+      {form:"пацан",region:"Південь-Схід",example:"Малий пацан вибіг на дорогу."},
+      {form:"пацанчик",region:"Південь (Одеса)",example:"Привіт, пацанчик, ти чий?"}
+    ]},
+    {literary:"тут",meaning:"у цьому місці",views:3210,rank:234,forms:[
+      {form:"тутечки",region:"Поділля",example:"Тутечки був, а вже нема."}
+    ]},
+    {literary:"ось це",meaning:"вказівка на щось поряд",views:2840,rank:256,forms:[
+      {form:"оце-во",region:"Поділля",example:"Оце-во подивися, шо я знайшов!"}
+    ]},
+    {literary:"ватник",meaning:"стара ватна куртка",views:3650,rank:198,forms:[
+      {form:"куфайка",region:"Слобожанщина",example:"Накинь куфайку, надворі холодно."}
+    ]},
+    {literary:"сьогодні",meaning:"у цей день",views:15670,rank:31,forms:[
+      {form:"сегодня",region:"Усюди (русизм)",example:"Сегодня на роботу не йду."}
+    ]},
+    {literary:"лікарня",meaning:"медичний заклад стаціонарного лікування",views:7890,rank:102,forms:[
+      {form:"больниця",region:"Усюди (русизм)",example:"Поклали в больницю на тиждень."}
+    ]},
+    {literary:"наступний",meaning:"той, що йде слідом",views:6440,rank:122,forms:[
+      {form:"слідуючий",region:"Усюди (русизм)",example:"Слідуючий хто заходить?"}
+    ]},
+    {literary:"решта",meaning:"гроші, що повертаються при оплаті готівкою",views:5120,rank:156,forms:[
+      {form:"здача",region:"Усюди",example:"Здачі не треба, лиши собі."}
+    ]},
+    {literary:"ринок",meaning:"місце торгівлі",views:8230,rank:88,forms:[
+      {form:"базар",region:"Усюди",example:"Пішла на базар по м'ясо."}
+    ]},
+    {literary:"пихато",meaning:"поводитись з гордістю",views:1920,rank:312,forms:[
+      {form:"гонорово",region:"Галичина",example:"Йде гонорово, як пан."}
+    ]},
+    {literary:"стержень",meaning:"ампула / стержень для кулькової ручки",views:2310,rank:287,forms:[
+      {form:"паста",region:"Слобожанщина",example:"Паста закінчилась посередині уроку."}
+    ]},
+    {literary:null,meaning:"бруд на шкірі, що скочується у кульки",views:1240,rank:401,forms:[
+      {form:"ЛЕП",region:"Слобожанщина",example:"На шиї перший ЛЕП — тиждень не митий."}
+    ]}
   ];
 
-  const regions = ["Усі", ...new Set(WORDS.map(w => w.region))];
+  const allRegions = [...new Set(CLUSTERS.flatMap(c => c.forms.map(f => f.region)))];
+  const regions = ["Усі", ...allRegions];
   let activeRegion = "Усі";
 
   function renderFilters() {
@@ -306,26 +345,48 @@
       `<button class="region-pill ${r===activeRegion?'active':''} px-4 py-2 rounded-full text-sm border border-slate-700 hover:border-yellow-400" data-region="${r}">${r}</button>`
     ).join("");
     c.querySelectorAll("button").forEach(b => {
-      b.onclick = () => { activeRegion = b.dataset.region; renderFilters(); renderWords(); };
+      b.onclick = () => { activeRegion = b.dataset.region; renderFilters(); renderClusters(); };
     });
   }
 
-  function renderWords() {
-    const filtered = activeRegion === "Усі" ? WORDS : WORDS.filter(w => w.region === activeRegion);
-    document.getElementById("word-grid").innerHTML = filtered.map(w => `
-      <div class="word-card border border-slate-800 rounded-xl p-5 bg-slate-900/40">
-        <div class="flex items-baseline justify-between mb-2">
-          <h3 class="text-xl font-bold text-yellow-400">${w.word}</h3>
-          <span class="text-xs text-slate-500">${w.region}</span>
+  function renderClusters() {
+    const filtered = activeRegion === "Усі"
+      ? CLUSTERS
+      : CLUSTERS.filter(c => c.forms.some(f => f.region === activeRegion));
+
+    document.getElementById("cluster-grid").innerHTML = filtered.map(c => {
+      const title = c.literary
+        ? `<h3 class="text-xl font-bold text-yellow-400">${c.literary}</h3>
+           <span class="text-[10px] uppercase tracking-widest text-slate-500">літ. форма</span>`
+        : `<h3 class="text-xl font-bold text-yellow-400">${c.forms[0].form}</h3>
+           <span class="text-[10px] uppercase tracking-widest text-slate-500">без літ. еквіваленту</span>`;
+
+      const formsHtml = c.forms.map(f => `
+        <div class="border-l-2 border-yellow-400/40 pl-3 py-1">
+          <div class="flex items-baseline justify-between gap-2">
+            <span class="font-semibold text-slate-200">${f.form}</span>
+            <span class="text-[10px] text-slate-500 shrink-0">${f.region}</span>
+          </div>
+          <p class="text-slate-500 text-xs italic mt-0.5">«${f.example}»</p>
         </div>
-        <p class="text-slate-300 text-sm mb-3">${w.meaning}</p>
-        <p class="text-slate-500 text-xs italic">«${w.example}»</p>
-      </div>
-    `).join("");
+      `).join("");
+
+      return `
+        <div class="word-card border border-slate-800 rounded-xl p-5 bg-slate-900/40 flex flex-col">
+          <div class="flex flex-col mb-3">${title}</div>
+          <p class="text-slate-300 text-sm mb-4">${c.meaning}</p>
+          <div class="space-y-2 mb-4">${formsHtml}</div>
+          <div class="mt-auto flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-800">
+            <span>👁 ${c.views.toLocaleString('uk-UA')} переглядів</span>
+            <span>#${c.rank}</span>
+          </div>
+        </div>
+      `;
+    }).join("");
   }
 
   renderFilters();
-  renderWords();
+  renderClusters();
 </script>
 
 </body>
