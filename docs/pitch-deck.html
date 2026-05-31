@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<title>Суржик — Pitch Deck</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  body { font-family: 'Inter', system-ui, sans-serif; margin: 0; background: rgb(2 6 23); }
+  .slide {
+    width: 1280px; height: 720px;
+    padding: 80px;
+    box-sizing: border-box;
+    page-break-after: always;
+    background: linear-gradient(135deg, rgb(2 6 23) 0%, rgb(15 23 42) 100%);
+    color: rgb(248 250 252);
+    position: relative;
+    overflow: hidden;
+  }
+  .slide:last-child { page-break-after: auto; }
+  .slide-num {
+    position: absolute; bottom: 30px; right: 50px;
+    font-family: monospace; color: rgb(100 116 139); font-size: 14px;
+  }
+  .slide-brand {
+    position: absolute; bottom: 30px; left: 50px;
+    color: rgb(100 116 139); font-size: 14px;
+  }
+  .slide-brand b { color: rgb(250 204 21); }
+  .accent { color: rgb(250 204 21); }
+  .grain {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.025) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+  @media screen {
+    body { padding: 40px; display: flex; flex-direction: column; gap: 40px; align-items: center; }
+    .slide { box-shadow: 0 30px 80px rgba(0,0,0,0.5); border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: HOOK -->
+<section class="slide grain flex flex-col justify-center">
+  <div class="text-sm uppercase tracking-[0.3em] text-yellow-400/80 mb-8">Web3 Resilience Lab Ukraine · 2026</div>
+  <h1 class="text-7xl font-bold leading-[1.05] tracking-tight mb-10">
+    Це не російська,<br />
+    це український <span class="accent">суржик</span>.
+  </h1>
+  <p class="text-2xl text-slate-300 max-w-3xl leading-relaxed">
+    Соціальний протокол автентичної української мови на блокчейні.
+  </p>
+  <div class="slide-brand"><b>Суржик</b> Protocol</div>
+  <div class="slide-num">01 / 05</div>
+</section>
+
+<!-- SLIDE 2: PROBLEM -->
+<section class="slide grain">
+  <div class="text-sm uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Проблема</div>
+  <h2 class="text-5xl font-bold leading-tight mb-10 max-w-4xl">
+    Жива мова <span class="accent">понад 50%</span> українців — без захисту, без авторства, без економіки
+  </h2>
+  <div class="grid grid-cols-2 gap-8 mt-12">
+    <div class="border-l-4 border-yellow-400 pl-6">
+      <div class="text-3xl font-bold mb-2">200 років</div>
+      <div class="text-lg text-slate-300">суржик нав'язується як «помилка» та «безкультурне мовлення», породжуючи внутрішню мовну дискримінацію</div>
+    </div>
+    <div class="border-l-4 border-yellow-400 pl-6">
+      <div class="text-3xl font-bold mb-2">Жодного</div>
+      <div class="text-lg text-slate-300">системного механізму збереження регіональних варіацій, фіксації авторства знахідок чи стимулу для носіїв</div>
+    </div>
+    <div class="border-l-4 border-yellow-400 pl-6">
+      <div class="text-3xl font-bold mb-2">Покоління 2022+</div>
+      <div class="text-lg text-slate-300">переходить на українську через суржик — цей шар потрібно зафіксувати зараз як культурний код історичного моменту</div>
+    </div>
+    <div class="border-l-4 border-yellow-400 pl-6">
+      <div class="text-3xl font-bold mb-2">Російська асиміляція</div>
+      <div class="text-lg text-slate-300">продовжується через відсутність захищеного джерела регіональної автентичності</div>
+    </div>
+  </div>
+  <div class="slide-brand"><b>Суржик</b> Protocol</div>
+  <div class="slide-num">02 / 05</div>
+</section>
+
+<!-- SLIDE 3: SOLUTION (3 LAYERS) -->
+<section class="slide grain">
+  <div class="text-sm uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Рішення</div>
+  <h2 class="text-5xl font-bold leading-tight mb-12">Три шари протоколу</h2>
+
+  <div class="grid grid-cols-3 gap-6">
+    <div class="border-2 border-yellow-400 rounded-xl p-7 bg-yellow-400/5">
+      <div class="text-xs uppercase tracking-widest text-yellow-400 mb-3">Шар 1 · MVP</div>
+      <h3 class="text-2xl font-bold mb-3">Словник як стек роялті-NFT</h3>
+      <p class="text-slate-300 text-base leading-relaxed">Кожне слово карбується першим автором з регіоном. Кожне доповнення породжує геометрично-спадний потік роялті.</p>
+    </div>
+
+    <div class="border border-slate-700 rounded-xl p-7 bg-slate-900/40">
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-3">Шар 2 · Roadmap</div>
+      <h3 class="text-2xl font-bold mb-3">Літопис автора</h3>
+      <p class="text-slate-300 text-base leading-relaxed">Soulbound non-transferable профіль. Унікальність + якість + регіональна достовірність → репутація. Помилки її зменшують.</p>
+    </div>
+
+    <div class="border border-slate-700 rounded-xl p-7 bg-slate-900/40">
+      <div class="text-xs uppercase tracking-widest text-slate-500 mb-3">Шар 3 · Vision</div>
+      <h3 class="text-2xl font-bold mb-3">Голос громадянина</h3>
+      <p class="text-slate-300 text-base leading-relaxed">Авторизація через «Дію» з регіоном. Вага голосу пропорційна літопису. Інтеграція у міські DAO.</p>
+    </div>
+  </div>
+
+  <div class="mt-12 text-center text-xl text-slate-400 italic">
+    «Це не російська, це український суржик.»
+  </div>
+  <div class="slide-brand"><b>Суржик</b> Protocol</div>
+  <div class="slide-num">03 / 05</div>
+</section>
+
+<!-- SLIDE 4: MECHANICS (TREMPEL EXAMPLE) -->
+<section class="slide grain">
+  <div class="text-sm uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Механіка</div>
+  <h2 class="text-5xl font-bold leading-tight mb-8">
+    Приклад: <span class="accent">«тремпель»</span> — вішак, Слобожанщина
+  </h2>
+
+  <div class="space-y-3 mt-8">
+    <div class="border border-slate-700 rounded-xl p-5 bg-slate-900/40 flex gap-5">
+      <div class="text-yellow-400 font-mono text-xl shrink-0 w-12">01</div>
+      <div>
+        <div class="font-bold text-lg mb-1">Карб слова</div>
+        <div class="text-slate-300">Автор сплачує <span class="accent font-mono">10 $SURZH</span> → on-chain запис: «тремпель», вішак, Харків, @Tambus → NFT, оригінатор #0</div>
+      </div>
+    </div>
+
+    <div class="border border-slate-700 rounded-xl p-5 bg-slate-900/40 flex gap-5">
+      <div class="text-yellow-400 font-mono text-xl shrink-0 w-12">02</div>
+      <div>
+        <div class="font-bold text-lg mb-1">Query existing (1 $SURZH)</div>
+        <div class="text-slate-300"><span class="accent">50%</span> оригінатору · <span class="accent">40%</span> DAO · <span class="accent">10%</span> burn (дефляція)</div>
+      </div>
+    </div>
+
+    <div class="border border-slate-700 rounded-xl p-5 bg-slate-900/40 flex gap-5">
+      <div class="text-yellow-400 font-mono text-xl shrink-0 w-12">03</div>
+      <div>
+        <div class="font-bold text-lg mb-1">Доповнення (propose-and-approve)</div>
+        <div class="text-slate-300">Контрибутор стейкає <span class="accent font-mono">5 $SURZH</span>. Apprve → стає частиною стеку роялті</div>
+      </div>
+    </div>
+
+    <div class="border border-slate-700 rounded-xl p-5 bg-slate-900/40 flex gap-5">
+      <div class="text-yellow-400 font-mono text-xl shrink-0 w-12">04</div>
+      <div>
+        <div class="font-bold text-lg mb-1">Геометричний стек роялті</div>
+        <div class="text-slate-300">#0 → <span class="accent">50%</span> · #1 → <span class="accent">20%</span> · #2 → <span class="accent">10%</span> · #3 → <span class="accent">5%</span> · #4 → <span class="accent">2.5%</span> · спадає</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-brand"><b>Суржик</b> Protocol</div>
+  <div class="slide-num">04 / 05</div>
+</section>
+
+<!-- SLIDE 5: ROADMAP + ASK -->
+<section class="slide grain">
+  <div class="text-sm uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Roadmap · Ask</div>
+  <h2 class="text-5xl font-bold leading-tight mb-10">Що зробимо за грант</h2>
+
+  <div class="grid grid-cols-2 gap-12">
+    <div>
+      <div class="space-y-5">
+        <div>
+          <div class="text-yellow-400 text-sm uppercase tracking-widest mb-1">Q3 2026 · інкубація</div>
+          <div class="text-lg font-semibold">MVP-словник + bootstrap</div>
+          <div class="text-slate-400 text-sm">1000+ слів, стек роялті, outreach до КНУ/ЛНУ/Острог, 20–30 Підтверджувачів</div>
+        </div>
+        <div>
+          <div class="text-slate-500 text-sm uppercase tracking-widest mb-1">Q4 2026 – Q1 2027</div>
+          <div class="text-lg font-semibold">Літопис, форум, AI-кластеризація</div>
+          <div class="text-slate-400 text-sm">Soulbound репутація, dispute resolution, мапа регіонів</div>
+        </div>
+        <div>
+          <div class="text-slate-500 text-sm uppercase tracking-widest mb-1">2027+</div>
+          <div class="text-lg font-semibold">«Дія», DAO, масштабування</div>
+          <div class="text-slate-400 text-sm">Регіональна верифікація, голос громадянина, культурна спадщина</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="bg-yellow-400/10 border-2 border-yellow-400 rounded-xl p-7">
+        <div class="text-xs uppercase tracking-widest text-yellow-400 mb-3">Ask</div>
+        <div class="text-5xl font-bold accent mb-2">$12 500</div>
+        <div class="text-slate-300 mb-6">грант + інкубація + менторство</div>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-slate-700 py-2">
+            <span class="text-slate-400">Розробка MVP</span>
+            <span class="font-bold">60%</span>
+          </div>
+          <div class="flex justify-between border-b border-slate-700 py-2">
+            <span class="text-slate-400">Контент (IG/YT/TikTok)</span>
+            <span class="font-bold">25%</span>
+          </div>
+          <div class="flex justify-between py-2">
+            <span class="text-slate-400">Експерти-філологи</span>
+            <span class="font-bold">15%</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 text-center text-slate-400 text-sm">
+        github.com/Tambus/surzhyk-protocol
+      </div>
+    </div>
+  </div>
+  <div class="slide-brand"><b>Суржик</b> Protocol</div>
+  <div class="slide-num">05 / 05</div>
+</section>
+
+</body>
+</html>
