@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Суржик — соціальний протокол автентичної української мови</title>
+<meta name="description" content="Це не російська, це український суржик. Соціальний протокол на блокчейні: словник суржикових слів як стек роялті-NFT з регіональною прив'язкою." />
+<meta property="og:title" content="Суржик — соціальний протокол автентичної української мови" />
+<meta property="og:description" content="Це не російська, це український суржик." />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+  .grain {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+  .word-card { transition: transform 0.15s, border-color 0.15s; }
+  .word-card:hover { transform: translateY(-2px); border-color: rgb(250 204 21); }
+  .region-pill { transition: background 0.15s; }
+  .region-pill.active { background: rgb(250 204 21); color: rgb(15 23 42); }
+  details[open] summary .chevron { transform: rotate(90deg); }
+  .chevron { transition: transform 0.15s; }
+</style>
+</head>
+<body class="bg-slate-950 text-slate-100 grain">
+
+<!-- HERO -->
+<header class="border-b border-slate-800/60">
+  <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl font-bold tracking-tight">Суржик</span>
+      <span class="text-xs uppercase tracking-widest text-yellow-400/80">Protocol</span>
+    </div>
+    <div class="flex items-center gap-6 text-sm text-slate-400">
+      <a href="#concept" class="hover:text-yellow-400">Концепт</a>
+      <a href="#mechanics" class="hover:text-yellow-400">Механіка</a>
+      <a href="#dictionary" class="hover:text-yellow-400">Словник</a>
+      <a href="#roadmap" class="hover:text-yellow-400">Roadmap</a>
+      <a href="https://github.com/Tambus/surzhyk-protocol" class="hover:text-yellow-400">GitHub</a>
+    </div>
+  </nav>
+
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-28">
+    <div class="max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-yellow-400/80 mb-6">
+        Web3 Resilience Lab Ukraine · 2026
+      </p>
+      <h1 class="text-5xl sm:text-7xl font-bold leading-[1.05] tracking-tight mb-8">
+        Це не російська,<br />
+        це український <span class="text-yellow-400">суржик</span>.
+      </h1>
+      <p class="text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl">
+        Соціальний протокол автентичної української мови на блокчейні. Кожне суржикове слово карбується як NFT з регіоном, автором та потоком роялті. Жива мова під захистом репутації.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#submit" class="bg-yellow-400 text-slate-950 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+          Надіслати своє слово
+        </a>
+        <a href="#mechanics" class="border border-slate-700 px-6 py-3 rounded-lg font-semibold hover:border-yellow-400 transition">
+          Як працює →
+        </a>
+      </div>
+    </div>
+  </section>
+</header>
+
+<!-- CONCEPT -->
+<section id="concept" class="border-b border-slate-800/60">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold mb-4">Три шари протоколу</h2>
+    <p class="text-slate-400 mb-16 max-w-2xl">Від словника до літопису громадянина. MVP фокусується на першому шарі — словнику суржика як стеку роялті-NFT.</p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border border-slate-800 rounded-xl p-7 bg-slate-900/40">
+        <div class="text-xs uppercase tracking-widest text-yellow-400/80 mb-3">Шар 1 · MVP</div>
+        <h3 class="text-xl font-semibold mb-3">Словник як стек роялті-NFT</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Перший автор карбує слово з регіоном і значенням. Кожне доповнення породжує геометрично-спадний потік роялті всім попереднім контрибуторам.</p>
+      </div>
+
+      <div class="border border-slate-800 rounded-xl p-7 bg-slate-900/40">
+        <div class="text-xs uppercase tracking-widest text-slate-500 mb-3">Шар 2 · Roadmap</div>
+        <h3 class="text-xl font-semibold mb-3">Літопис автора</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Soulbound non-transferable профіль. Унікальні карби, схвалені доповнення, валідаційна активність формують репутацію. Доведені фейки її зменшують.</p>
+      </div>
+
+      <div class="border border-slate-800 rounded-xl p-7 bg-slate-900/40">
+        <div class="text-xs uppercase tracking-widest text-slate-500 mb-3">Шар 3 · Vision</div>
+        <h3 class="text-xl font-semibold mb-3">Голос громадянина</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Авторизація через «Дію» з регіональним підтвердженням. Вага голосу пропорційна літопису. Інтеграція у DAO-голосування та культурні ініціативи.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MECHANICS / EXAMPLE -->
+<section id="mechanics" class="border-b border-slate-800/60">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold mb-4">Механіка карбу та доповнень</h2>
+    <p class="text-slate-400 mb-12 max-w-2xl">Як приклад — «<span class="text-yellow-400">тремпель</span>», харків'янське слово для вішака.</p>
+
+    <div class="space-y-4">
+      <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
+        <div class="flex items-start gap-4">
+          <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">01</div>
+          <div>
+            <h4 class="font-semibold mb-1">Карб слова</h4>
+            <p class="text-slate-400 text-sm">Перший автор сплачує <span class="text-yellow-400 font-mono">10 $SURZH</span>, on-chain записується: слово «тремпель», значення «вішак для одягу», регіон «Слобожанщина», автор @Tambus. Слово стає NFT — оригінатор #0.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
+        <div class="flex items-start gap-4">
+          <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">02</div>
+          <div>
+            <h4 class="font-semibold mb-1">Спроба переоткрити (query)</h4>
+            <p class="text-slate-400 text-sm">Інший користувач намагається додати «тремпель» → платить <span class="text-yellow-400 font-mono">1 $SURZH</span> → виявляє що слово існує. Розподіл: <span class="text-yellow-400">50%</span> оригінатору, <span class="text-yellow-400">40%</span> DAO, <span class="text-yellow-400">10%</span> спалюється. Це дефляція + пасивний дохід.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
+        <div class="flex items-start gap-4">
+          <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">03</div>
+          <div>
+            <h4 class="font-semibold mb-1">Доповнення значення</h4>
+            <p class="text-slate-400 text-sm">Контрибутор стейкає <span class="text-yellow-400 font-mono">5 $SURZH</span> на пропозицію: «додати етимологію — нім. Trempel». Чекає схвалення спільноти або Підтверджувача. Apprve → стає контрибутором #1, отримує <span class="text-yellow-400">20%</span> з усіх наступних query.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
+        <div class="flex items-start gap-4">
+          <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">04</div>
+          <div>
+            <h4 class="font-semibold mb-1">Стек роялті</h4>
+            <p class="text-slate-400 text-sm">Геометрично-спадний розподіл: оригінатор <span class="text-yellow-400">50%</span>, контрибутор #1 — <span class="text-yellow-400">20%</span>, #2 — <span class="text-yellow-400">10%</span>, #3 — <span class="text-yellow-400">5%</span>, #4 — <span class="text-yellow-400">2.5%</span> і т.д. Решта йде в DAO + burn.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
+        <div class="flex items-start gap-4">
+          <div class="text-yellow-400 font-mono text-lg shrink-0 w-12">05</div>
+          <div>
+            <h4 class="font-semibold mb-1">Спір та slashing</h4>
+            <p class="text-slate-400 text-sm">Якщо доповнення доведено помилковим у форум-треді → refund попереднім контрибуторам, заморозка комісій, мінус літопис автору пропозиції. Самоочисний протокол.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DICTIONARY -->
+<section id="dictionary" class="border-b border-slate-800/60">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold mb-4">Стартовий словник</h2>
+    <p class="text-slate-400 mb-8 max-w-2xl">20 суржикових слів з регіональною прив'язкою — кандидати на перший карб у протоколі. Натисни регіон, щоб відфільтрувати.</p>
+
+    <div id="region-filters" class="flex flex-wrap gap-2 mb-8"></div>
+    <div id="word-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+  </div>
+</section>
+
+<!-- VALIDATION -->
+<section id="validation" class="border-b border-slate-800/60">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold mb-12">Самоочисний протокол</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border border-slate-800 rounded-xl p-6">
+        <h3 class="font-semibold mb-2 text-yellow-400">Soft path</h3>
+        <p class="text-sm text-slate-400">Голосування спільноти (+/–) для простих випадків. Швидко, демократично.</p>
+      </div>
+      <div class="border border-slate-800 rounded-xl p-6">
+        <h3 class="font-semibold mb-2 text-yellow-400">Hard path</h3>
+        <p class="text-sm text-slate-400">Підтверджувачі — філологи, краєзнавці, журналісти з підтвердженою експертизою. Їхній голос важить значно більше.</p>
+      </div>
+      <div class="border border-slate-800 rounded-xl p-6">
+        <h3 class="font-semibold mb-2 text-yellow-400">Dispute forum</h3>
+        <p class="text-sm text-slate-400">Спірні випадки виносяться у тред з аргументацією on-chain. Резолюція через голосування або ескалацію.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="border-b border-slate-800/60">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold mb-12">Дорожня карта</h2>
+    <div class="space-y-3">
+      <details class="border border-slate-800 rounded-xl p-6 bg-slate-900/40" open>
+        <summary class="flex items-center gap-3 cursor-pointer">
+          <span class="chevron text-yellow-400">›</span>
+          <span class="text-xs uppercase tracking-widest text-yellow-400/80">Q3 2026 — інкубація</span>
+          <span class="font-semibold">MVP-словник + bootstrap Підтверджувачів</span>
+        </summary>
+        <ul class="mt-4 ml-8 space-y-1 text-slate-400 text-sm list-disc">
+          <li>Запуск MVP словника зі стек-роялті механікою</li>
+          <li>1000+ карбованих слів з регіональною прив'язкою</li>
+          <li>Outreach до філологічних факультетів КНУ ім. Шевченка, ЛНУ ім. Франка, Острозької академії</li>
+          <li>Bootstrap 20–30 Підтверджувачів першого кола</li>
+        </ul>
+      </details>
+
+      <details class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
+        <summary class="flex items-center gap-3 cursor-pointer">
+          <span class="chevron text-yellow-400">›</span>
+          <span class="text-xs uppercase tracking-widest text-slate-500">Q4 2026 – Q1 2027</span>
+          <span class="font-semibold">Літопис, рейтинг, форум-треди</span>
+        </summary>
+        <ul class="mt-4 ml-8 space-y-1 text-slate-400 text-sm list-disc">
+          <li>Soulbound літопис автора</li>
+          <li>Форум-треди для dispute resolution</li>
+          <li>AI-кластеризація фонетичних варіацій</li>
+          <li>Мапа регіонів з підсвічуванням при наведенні</li>
+        </ul>
+      </details>
+
+      <details class="border border-slate-800 rounded-xl p-6 bg-slate-900/40">
+        <summary class="flex items-center gap-3 cursor-pointer">
+          <span class="chevron text-yellow-400">›</span>
+          <span class="text-xs uppercase tracking-widest text-slate-500">2027+</span>
+          <span class="font-semibold">«Дія», DAO, масштабування</span>
+        </summary>
+        <ul class="mt-4 ml-8 space-y-1 text-slate-400 text-sm list-disc">
+          <li>Інтеграція «Дія.Підпис» для регіональної верифікації</li>
+          <li>DAO-голосування з вагою літопису</li>
+          <li>Масштабування протоколу: культурна спадщина, перевірка фактів, громадські ініціативи</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- SUBMIT -->
+<section id="submit" class="border-b border-slate-800/60">
+  <div class="max-w-3xl mx-auto px-6 py-24">
+    <h2 class="text-3xl font-bold mb-4">Надішли своє слово</h2>
+    <p class="text-slate-400 mb-8">Збираємо суржикові слова з регіонів для першого MVP-карбу. Контрибутори отримають літопис після запуску протоколу.</p>
+
+    <form action="https://formspree.io/f/REPLACE_ME" method="POST" class="space-y-4">
+      <div>
+        <label class="block text-sm text-slate-400 mb-2">Слово</label>
+        <input name="word" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:border-yellow-400 outline-none" placeholder="наприклад: тремпель" />
+      </div>
+      <div>
+        <label class="block text-sm text-slate-400 mb-2">Значення</label>
+        <input name="meaning" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:border-yellow-400 outline-none" placeholder="вішак для одягу" />
+      </div>
+      <div>
+        <label class="block text-sm text-slate-400 mb-2">Регіон (де ти його чув)</label>
+        <input name="region" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:border-yellow-400 outline-none" placeholder="Слобожанщина, Харків" />
+      </div>
+      <div>
+        <label class="block text-sm text-slate-400 mb-2">Приклад у реченні</label>
+        <textarea name="example" rows="2" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:border-yellow-400 outline-none" placeholder="Повісь сорочку на тремпель."></textarea>
+      </div>
+      <div>
+        <label class="block text-sm text-slate-400 mb-2">Контакт (email або Telegram)</label>
+        <input name="contact" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:border-yellow-400 outline-none" placeholder="@username" />
+      </div>
+      <button type="submit" class="bg-yellow-400 text-slate-950 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+        Надіслати
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-slate-500 text-sm py-12">
+  <p>Подано на грант <a href="https://web3lab.org.ua/" class="text-yellow-400 hover:underline">Web3 Resilience Lab Ukraine</a> · травень 2026</p>
+  <p class="mt-2"><a href="https://github.com/Tambus/surzhyk-protocol" class="text-yellow-400 hover:underline">GitHub</a></p>
+</footer>
+
+<script>
+  const WORDS = [
+    {word:"тремпель",meaning:"вішак для одягу",region:"Слобожанщина",example:"Повісь сорочку на тремпель."},
+    {word:"паста",meaning:"ампула / стержень для кулькової ручки",region:"Слобожанщина",example:"Паста закінчилась посередині уроку."},
+    {word:"ЛЕП",meaning:"бруд на шкірі, що скочується у кульки",region:"Слобожанщина",example:"На шиї перший ЛЕП — тиждень не митий."},
+    {word:"балакати",meaning:"говорити, розмовляти",region:"Центр-Схід",example:"Шо ти балакаєш такого?"},
+    {word:"файно",meaning:"добре, гарно",region:"Галичина",example:"Файно ся стало!"},
+    {word:"гонорово",meaning:"пихато, з гордістю",region:"Галичина",example:"Йде гонорово, як пан."},
+    {word:"пательня",meaning:"сковорода",region:"Галичина",example:"На пательні млинці смажу."},
+    {word:"мешкати",meaning:"жити, постійно проживати",region:"Галичина",example:"Мешкаю у Львові з 2020 року."},
+    {word:"ровер",meaning:"велосипед",region:"Галичина",example:"Сів на ровер і поїхав до Стрия."},
+    {word:"сегодня",meaning:"сьогодні",region:"Усюди (русизм)",example:"Сегодня на роботу не йду."},
+    {word:"больниця",meaning:"лікарня",region:"Усюди (русизм)",example:"Поклали в больницю на тиждень."},
+    {word:"слідуючий",meaning:"наступний",region:"Усюди (русизм)",example:"Слідуючий хто заходить?"},
+    {word:"здача",meaning:"решта (при оплаті готівкою)",region:"Усюди",example:"Здачі не треба, лиши собі."},
+    {word:"базар",meaning:"ринок, торговище",region:"Усюди",example:"Пішла на базар по м'ясо."},
+    {word:"картоха",meaning:"картопля (ласкаво-побутово)",region:"Полтавщина",example:"Накопали два мішки картохи."},
+    {word:"пацан",meaning:"хлопець, малий",region:"Південь-Схід",example:"Малий пацан вибіг на дорогу."},
+    {word:"пацанчик",meaning:"юнак, малий хлопець (ласкаво)",region:"Південь (Одеса)",example:"Привіт, пацанчик, ти чий?"},
+    {word:"оце-во",meaning:"ось це, дивись на це",region:"Поділля",example:"Оце-во подивися, шо я знайшов!"},
+    {word:"тутечки",meaning:"тут, у цьому місці",region:"Поділля",example:"Тутечки був, а вже нема."},
+    {word:"куфайка",meaning:"стара ватна куртка, тілогрейка",region:"Слобожанщина",example:"Накинь куфайку, надворі холодно."}
+  ];
+
+  const regions = ["Усі", ...new Set(WORDS.map(w => w.region))];
+  let activeRegion = "Усі";
+
+  function renderFilters() {
+    const c = document.getElementById("region-filters");
+    c.innerHTML = regions.map(r =>
+      `<button class="region-pill ${r===activeRegion?'active':''} px-4 py-2 rounded-full text-sm border border-slate-700 hover:border-yellow-400" data-region="${r}">${r}</button>`
+    ).join("");
+    c.querySelectorAll("button").forEach(b => {
+      b.onclick = () => { activeRegion = b.dataset.region; renderFilters(); renderWords(); };
+    });
+  }
+
+  function renderWords() {
+    const filtered = activeRegion === "Усі" ? WORDS : WORDS.filter(w => w.region === activeRegion);
+    document.getElementById("word-grid").innerHTML = filtered.map(w => `
+      <div class="word-card border border-slate-800 rounded-xl p-5 bg-slate-900/40">
+        <div class="flex items-baseline justify-between mb-2">
+          <h3 class="text-xl font-bold text-yellow-400">${w.word}</h3>
+          <span class="text-xs text-slate-500">${w.region}</span>
+        </div>
+        <p class="text-slate-300 text-sm mb-3">${w.meaning}</p>
+        <p class="text-slate-500 text-xs italic">«${w.example}»</p>
+      </div>
+    `).join("");
+  }
+
+  renderFilters();
+  renderWords();
+</script>
+
+</body>
+</html>
